@@ -1,10 +1,11 @@
 pipeline {
-    agent any
+    agent none
 
     stages {
-        stage('Hello') {
+        stage('Run script') {
+            agent { label 'test' }
             steps {
-                echo 'Hello World'
+                 bat "C:\Users\Tzvi\AppData\Local\Microsoft\WindowsApps\python.exe tzvi_checkup.py
             }
         }
     }
