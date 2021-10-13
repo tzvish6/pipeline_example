@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Code') {
+        stage('Hello') {
             steps {
-                bat "C:\Users\Tzvi\AppData\Local\Microsoft\WindowsApps\python.exe tzvi_checkup.py"
+                echo 'Hello World'
             }
         }
     }
