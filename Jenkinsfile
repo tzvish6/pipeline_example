@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run Code') {
             steps {
-                bat "C:\Users\Tzvi\AppData\Local\Microsoft\WindowsApps\python.exe tzvi_checkup.py"
+                bat "python.exe tzvi_checkup.py"
             }
         }
     }
